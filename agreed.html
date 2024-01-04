@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="可可小學堂,巧克力,可可相關介紹">
+    <meta name="author" content="圖書館資訊系統,謝采軒,徐郁瑩,呂湘琳,王則惠">
+    <meta name="generator" content="">
+    <title>圖書館資訊系統B2組期末展示</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .content-article{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .bg-cocoapic{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        opacity: 50%;
+        border-radius: 3px;
+        position: absolute;
+      }
+
+      @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+      h1{
+        font-family: ‘cwTeXYen’, sans-serif;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .card-header-adjustment{
+        padding: 1rem; 
+        text-align: center; 
+        background-color: #cfe2ff;
+        border-color: #b6d4fe;
+        height: 56px;
+      }
+      .qryResult .cardIcon{
+          margin-right: 6px;
+          cursor: pointer;
+          color: rgb(1, 21, 37);
+      }
+
+      .qryResult .cardIcon.clicked{
+          color: #a63e3e;
+      }
+    </style>
+
+    
+  </head>
+  <body class="bg-light">
+    
+<main>
+  <header>
+    <div class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation" style="background-color: #330d01; padding-top: 0 rem;padding-bottom: 0 rem;">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center align-middle">
+          <strong class="h2" style="margin-bottom: 0rem;">冬季ㄉ可可派對</strong>
+          <img src="assets/brand/icon_01-PhotoRoom.png" width="50" height="50"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" 
+        aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav nav-masthead float-md-end navbar-collapse collapse" id="navbarSupportedContent2" style="color: #0d6efd; flex-grow: 0;">
+          <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+            <li class="nav-link">
+              <a class="nav-link fw-bold" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-link">
+              <a class="nav-link fw-bold" href="information.html">品種介紹</a>
+            </li>
+            <li class="nav-link">
+              <a class="nav-link fw-bold" href="search.html">加工製造</a>
+            </li>
+            <li class="nav-link">
+              <a class="nav-link active fw-bold" href="agreed.html">產品型態</a>
+            </li>
+            <li class="nav-link dropdown">
+              <a class="nav-link dropdown-toggle fw-bold" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="user.html">可可冷知識</a></li>
+                <li><a class="dropdown-item" href="likes.html">巧克力品牌介紹</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container py-4">
+    <div class="p-5 mb-4 rounded-3 shadow-sm mt-3" style="background-color: burlywood;">
+      <div class="container-fluid py-5">
+        <p class="display-5 fw-bold" style="text-align: right; color:rgb(160, 115, 100); text-shadow: 0.1em black; font-size: 56px;">產品型態介紹</p>
+        <p class="fw-bold fs-4" style="text-align: right; color:whitesmoke; text-shadow: 0.1em black; font-size: 32px;">可可豆、可可粉、可可膏、可可脂...差在哪裡呢?</p>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch mb-4">
+      <div class="col-md-6">
+        <div class="bg-light border rounded-3" style="height: 350px; position: relative;">
+          <img src="assets/brand/beans.jpg" class="bg-cocoapic"/>
+          <div class="p-5 text-dark rounded-3" style="position: absolute;">
+            <h2 class="fw-bold">可可豆</h2>
+          <br>
+          <p style="font-size: 20px;">烘烤、研磨後即包裝成初級加工產品，可直接食用或應用於料理。</p>
+          <br>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable" style="background-color: #330d01; 
+          border-color: bisque;
+          position: absolute;">
+            點我看保存方法 & 期限
+          </button>
+          </div>    
+        </div> 
+      </div>
+
+      <div class="col-md-6">
+        <div class="bg-light border rounded-3" style="height: 350px; position: relative;">
+          <img src="assets/brand/powder.jpg" class="bg-cocoapic"/>
+          <div class="p-5 text-dark rounded-3" style="position: absolute;">
+            <h2  class="fw-bold">可可粉</h2>
+            <br>
+            <p style="font-size: 20px;">經過烘烤的可可豆，研磨成液態的可可液中提取可可脂後剩餘的成分，經常用於甜點烘焙。</p>
+            <br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal002" style="background-color: #330d01; 
+          border-color: bisque;
+          position: absolute;">
+            點我看保存方法 & 期限
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch mb-4">
+
+      <div class="col-md-6">
+        <div class="bg-light border rounded-3" style="height: 350px; position: relative;">
+          <img src="assets/brand/unshaped chocolate.jpg" class="bg-cocoapic"/>
+          <div class="p-5 text-dark rounded-3" style="position: absolute;">
+            <h2  class="fw-bold">可可膏</h2>
+            <br>
+              <p style="font-size: 20px;">固形巧克力，即市面上常見的巧克力未倒入模型前的狀態，適合提供給想創意塑形巧克力、沖泡飲用可可的業者。</p>
+            <br><br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal003" style="background-color: #330d01; 
+          border-color: bisque;
+          position: absolute;">
+            點我看保存方法 & 期限
+          </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="bg-light border rounded-3" style="height: 350px; position: relative;">
+          <img src="assets/brand/bowl of butter.jpg" class="bg-cocoapic"/>
+          <div class="p-5 text-dark rounded-3" style="position: absolute;">
+            <h2  class="fw-bold">可可脂</h2>
+            <br>
+            <p style="font-size: 20px;">又稱「可可油」，是在巧克力製作過程中自可可豆榨取的植物性油脂，占可可豆約一半的重量，賦予巧克力入口即化的口感。「白巧克力」即是以可可脂為主成分所製成之甜點。</p>
+            <br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal004" style="background-color: #330d01; 
+          border-color: bisque;
+          position: absolute;">
+            點我看保存方法 & 期限
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalCenteredScrollableTitle">可可豆小知識</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <br>
+              <p>保存方法： 將可可豆存放在乾燥、陰涼、避光的地方，最好使用密封容器。不可以放冰箱。由於可可豆很容易就會吸收水份跟異味，而這兩樣冰箱都很多。
+                <br><br><br>
+                保存期限： 一般而言，可可豆可以保存約一年。要確保它們不受潮濕和陽光直射。但是烘培後的可可豆，如果你希望把這味道豐富的可可豆作成味道豐富的巧克力—使用時效則約1個禮拜內。其他方面的利用就落在這兩者中間。幾個禮拜內著可可豆是不會壞掉，但是慢慢的豐富的風味會散去，慢慢的變得無味。如果這可可豆在數個月之內不會使用到，那就暫緩烘焙動作。
+              </p>
+              <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal002" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalCenteredScrollableTitle">可可粉小知識</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <br><p>
+              保存方法： 可可粉應該保存在乾燥、陰涼的地方，最好放在密封容器中，避免受潮濕和氣味影響。室溫或冷藏保存，都沒問題喔！
+              <br><br><br>
+              保存期限： 一般而言，可可粉的保存期限為一至二年。定期檢查狀態，如果出現濕氣或結塊，可能需要更快使用。
+            </p><br> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal003" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalCenteredScrollableTitle">可可膏小知識</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <br>
+            <p class="text-dark">保存方法： 將未使用的可可膏保存在冷暗的地方，最好是冰箱。開封後，要確保容器緊封，以防止空氣和潮氣進入。勿接近高溫，開封後請完整密封。
+            <br><br>
+            保存期限： 開封後，一般可可膏可以保存約三至六個月，取決於保存環境和容器密封性。</p>
+            <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal004" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalCenteredScrollableTitle">可可脂小知識</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <br>
+              <p>保存方法： 保存在低溫、低濕、遮斷光線之環境下。低溫為防止氧化及霜斑，低濕為防止水份滲入；特別是高濕度環境下，溫度降低會產生結露現象。
+                光線則易使油脂氧化酸敗，因此用遮光性材料包裝是油脂保存的基本原則之一。最好用鋁箔包裝來遮斷陽光照射。
+                <ul class="text-dark" style="font-size: 15px;">
+                  <li>盡量避免接觸銅質、鎳質的容器：銅、鎳等部分金屬易加速油脂氧化，應盡量使用鐵質、鋁質、不銹鋼之容器。</li>
+                  <li>避免與含有強烈臭味物質同時存放保管：因可可脂有易吸附臭味的特性，盡量避免與味道強烈的原料同時存放。</li>
+                </ul>
+              </p>
+              <br><br>
+              <p class="text-dark" style="font-size: 15px;">
+                保存期限： 可可脂的保存期限相對較長，一般為二至三年。定期檢查質地和味道，如果變質，應該盡早使用。</p>
+              <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <footer class="rowpy-4 my-5 border-top">
+    <div class="row row-cols-12">
+      <div class="mt-2 col-md-12 text-center">
+        <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span>資料維護：LIS'em 92無鉛汽油!</span>
+      </div>
+    </div>
+    <div class="row row-cols-12">
+      <div class="col-md-12 text-center">
+        <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span>系統版本：2023-12-13</span>
+      </div>
+    </div>
+    <br>
+    <div class="row row-cols-12">
+      <div class="col-md-12 text-center">
+        <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span>「為什麼可可喜歡參加派對？...因為它喜歡有點濃郁的氛圍！」</span>
+      </div>
+    </div>
+  </footer>
+</main>
+   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
